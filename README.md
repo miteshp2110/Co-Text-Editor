@@ -18,7 +18,7 @@ A simple collaborative text editor built using WebSocket in an Express server wi
 
 ```bash
 git clone https://github.com/miteshp2110/Co-Text-Editor.git
-npm init
+npm install
 cd Co-Text-Editor
 node index
 
