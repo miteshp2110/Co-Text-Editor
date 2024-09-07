@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: texteditor-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: texteditor
+  template:
+    metadata:
+      labels:
+        app: texteditor
+    spec:
+      containers:
+      - name: texteditorcontainer
+        image: mitesh2110/text-editor:latest
+        ports:
+        - containerPort: 3000
